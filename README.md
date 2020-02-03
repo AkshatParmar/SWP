@@ -6,3 +6,17 @@ Restaurants are complicated systems with many moving parts that can be  optimize
 ---
 # Problem Diagnosis
 ## Customer 
+
+
+---
+# Contributors
+- Tyler Hong
+- Khizer Humayun
+- Harman Kailey
+- Kebin Li
+- Jianhong Mai
+- Akshat Parmar
+- Ebad Ullah Qureshi
+- Nianyi Wang
+- Shuren Xia
+- Runtian Ye
