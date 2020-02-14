@@ -32,4 +32,4 @@ easier way to keep track of their orders and other tasks.
 - Ebad Ullah Qureshi
 - Nianyi Wang
 - Shuren Xia
-- Runtian Ye
+- Runtian Yeet
