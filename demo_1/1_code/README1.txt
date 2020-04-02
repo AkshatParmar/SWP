@@ -12,7 +12,8 @@ Installing and Initializing Expo
 
 Steps
 1.) Clone the repo " git clone <url> "
-2.) Run " npm install " in each module's(chef, customer, manager) folder (Note how node_modules folder is added)
+2.) Open terminal in the directory (chef, customer, manager) you want to run.
+2.) Run " npm install " (Note how node_modules folder is added)
 3.) " expo start " to begin testing
 
 MAC OS Requirements 
