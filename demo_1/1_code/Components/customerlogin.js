@@ -32,6 +32,7 @@ export default function Login({navigation}){
             </View>
             <View style={{marginVertical: 30,  width: 160}}>
                 <Button
+                    onPress={() => navigation.navigate('customermenu')}
                     title='Continue as Guest'
                     color='#f04b48' 
                 />
