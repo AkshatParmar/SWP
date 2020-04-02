@@ -10,7 +10,7 @@ Installing and Initializing Expo
 1.) " npm install expo-cli --global "
 2.) [optional] you might run into issue about script execution policy, run " Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser " to let yourself run scripts
 
-Steps
+Running the software
 1.) Clone the repo " git clone <url> " ( The url is https://github.com/AkshatParmar/SWP)
 2.) Open terminal in the 1_code directory. 
     - Right click "1_code" folder and click "Open in terminal"
