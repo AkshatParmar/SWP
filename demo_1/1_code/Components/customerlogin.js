@@ -22,10 +22,13 @@ export default function Login({navigation}){
                 onChangeText={(text)=>setPassword(text)}
                 value={password} 
             />
-            <View style={{marginTop: 40, width: 160}}>
-                <TouchableOpacity onPress={() => navigation.navigate('customermenu')}>
-                    <Text style={{color: '#f04b48'}}> Login!</Text>
-                </TouchableOpacity>  
+            
+            <View style={{marginTop: 40,  width: 160}}>
+                <Button
+                    onPress={() => navigation.navigate('customermenu')}
+                    title='Login'
+                    color='#f04b48' 
+                />
             </View>
             <View style={{marginVertical: 30,  width: 160}}>
                 <Button

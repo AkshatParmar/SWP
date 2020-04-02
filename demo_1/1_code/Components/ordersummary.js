@@ -1,5 +1,6 @@
+
 import React, {useState} from 'react';
-import { StyleSheet, Text, View, FlatList,TouchableOpacity } from 'react-native';
+import { StyleSheet, Text, View, FlatList,TouchableOpacity, Button } from 'react-native';
 import Header from '../Components/header';
 import Footer from '../Components/footer';
 
@@ -15,7 +16,8 @@ export default function OrderSummary({navigation}){
 
     return (
         <View style={styles.container}>
-            <View><Header title='Order Summary'/></View>
+            <View><Header 
+            title='Order Summary'/></View>
             <View style={{flex: 1, padding: 15}}>
                 <FlatList 
                     data={items}
@@ -31,12 +33,15 @@ export default function OrderSummary({navigation}){
                 <Text>Sales Tax: ${tax.toFixed(2)}</Text>
                 <Text>Total Charges: ${totalCharge.toFixed(2)}</Text>
             </View>
-            <View><Footer title='Confirm Order'/></View>
-            <View>
-                <TouchableOpacity onPress={() => navigation.navigate('CardPayment')}>
-                <Text style={{color: '#f04b48', fontSize: 20, fontWeight: 'bold', textAlign: 'center', marginBottom: 20}}>Go to payment</Text>
-                </TouchableOpacity> 
+            <View style={{marginLeft:80, marginTop:10, width: 250}}>
+                <Button
+                    onPress={() => navigation.navigate('CardPayment')}
+                    title='Confirm order'
+                    color='#f04b48' 
+                />
             </View>
+     
+            
         </View>
     );
 }
