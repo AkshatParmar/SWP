@@ -1,9 +1,9 @@
 import React, {useState} from 'react';
-import { StyleSheet, Text, View, FlatList } from 'react-native';
+import { StyleSheet, Text, View, FlatList,TouchableOpacity } from 'react-native';
 import Header from '../Components/header';
 import Footer from '../Components/footer';
 
-export default function OrderSummary(){
+export default function OrderSummary({navigation}){
     const [items, setitems] = useState([
         {name: 'Grilled Chicken Sandwich', qty: 3, price: 4.25},
         {name: 'Honey Chilli Potatoes', qty: 6, price: 1.49},
@@ -32,6 +32,11 @@ export default function OrderSummary(){
                 <Text>Total Charges: ${totalCharge.toFixed(2)}</Text>
             </View>
             <View><Footer title='Confirm Order'/></View>
+            <View>
+                <TouchableOpacity onPress={() => navigation.navigate('CardPayment')}>
+                <Text style={{color: '#f04b48', fontSize: 20, fontWeight: 'bold', textAlign: 'center', marginBottom: 20}}>Go to payment</Text>
+                </TouchableOpacity> 
+            </View>
         </View>
     );
 }

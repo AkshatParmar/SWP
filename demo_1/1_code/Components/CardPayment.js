@@ -1,8 +1,8 @@
 import React from 'react';
-import { StyleSheet, KeyboardAvoidingView, TouchableWithoutFeedback, Keyboard, View, TextInput } from 'react-native';
+import { StyleSheet, KeyboardAvoidingView, TouchableWithoutFeedback, Keyboard, View, TextInput, TouchableOpacity, Text } from 'react-native';
 import SwipeButton from 'rn-swipe-button';
 
-export default function CardPayment() {
+export default function CardPayment({navigation}) {
     return (
       <View style={styles.container}>
         <TextInput
@@ -27,6 +27,11 @@ export default function CardPayment() {
             placeholder='Zip'
         />
         <SwipeButton height={25} title='Swipe Your Card' onSwipeSuccess={() => console.log('Swiped Successfully')} />
+        <View>
+                <TouchableOpacity onPress={() => navigation.navigate('customermenu')}>
+                <Text style={{color: '#f04b48', fontSize: 20, fontWeight: 'bold', textAlign: 'center', marginBottom: 20}}>Cancel </Text>
+                </TouchableOpacity> 
+            </View>
       </View>
     );
   }

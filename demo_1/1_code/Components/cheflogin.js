@@ -26,12 +26,12 @@ export default function Login({navigation}) {
                 <Button
                     title="Log in"
                     onPress={() =>
-                        navigation.navigate('main')
+                        navigation.navigate('chefmain')
                     }
                 />
             </View>
            
-            <TouchableOpacity onPress={() => navigation.navigate('register')}>
+            <TouchableOpacity onPress={() => navigation.navigate('chefregister')}>
                 <Text style={{color: '#f04b48'}}> New User? Register!</Text>
             </TouchableOpacity>  
         </View>

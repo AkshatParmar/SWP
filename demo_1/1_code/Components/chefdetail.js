@@ -29,13 +29,13 @@ export default function main({navigation}){
             add more sources,
             with coke
             </Text>
-            <TouchableOpacity onPress={() => navigation.navigate('main')}>
+            <TouchableOpacity onPress={() => navigation.navigate('chefmain')}>
             <Text style={{color: '#f04b48', fontSize: 20, fontWeight: 'bold', textAlign: 'center', marginBottom: 20}}>Back</Text>
             </TouchableOpacity>  
-            <TouchableOpacity onPress={() => navigation.navigate('done')}>
+            <TouchableOpacity onPress={() => navigation.navigate('chefdone')}>
             <Text style={{color: '#f04b48', fontSize: 20, fontWeight: 'bold', textAlign: 'center', marginBottom: 20}}>Done</Text>
             </TouchableOpacity>  
-            <TouchableOpacity onPress={() => navigation.navigate('done')}>
+            <TouchableOpacity onPress={() => navigation.navigate('chefdone')}>
             <Text style={{color: '#f04b48', fontSize: 20, fontWeight: 'bold', textAlign: 'center', marginBottom: 20}}>Call Server</Text>
             </TouchableOpacity>  
           </View>

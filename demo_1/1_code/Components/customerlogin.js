@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import { StyleSheet, Text, View, Button, TextInput, Image, TouchableOpacity } from 'react-native';
 
-export default function Login(){
+export default function Login({navigation}){
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
@@ -23,10 +23,9 @@ export default function Login(){
                 value={password} 
             />
             <View style={{marginTop: 40, width: 160}}>
-                <Button
-                    title='Login'
-                    color='#f04b48' 
-                />
+                <TouchableOpacity onPress={() => navigation.navigate('customermenu')}>
+                    <Text style={{color: '#f04b48'}}> Login!</Text>
+                </TouchableOpacity>  
             </View>
             <View style={{marginVertical: 30,  width: 160}}>
                 <Button
