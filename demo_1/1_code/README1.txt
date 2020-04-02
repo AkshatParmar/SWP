@@ -12,8 +12,8 @@ Installing and Initializing Expo
 
 Steps
 1.) Clone the repo " git clone <url> " ( The url is https://github.com/AkshatParmar/SWP)
-2.) Open terminal in the directory (chef, customer, manager) you want to run. 
-    - Right click one of the folders (chef, customer, manager) and click "Open in terminal"
+2.) Open terminal in the 1_code directory. 
+    - Right click "1_code" folder and click "Open in terminal"
 2.) Run " npm install " (Note how node_modules folder is added)
 3.) Type " expo start " to begin testing
 
@@ -21,3 +21,13 @@ MAC OS Requirements
 1.) Install Watchmen for expo cli to work
     'brew install Watchmen'
 2.) Run 'npm install'
+
+
+If errors
+install the following by typing it as it is in the terminal
+
+npm install @react-navigation/native
+npm install @react-navigation/stack
+npm install react-navigation --save
+npm install react-navigation-stack --save
+npm install rn-swipe-button --save
