@@ -1,5 +1,5 @@
 import React, { useState} from 'react';
-import {StyleSheet, Text, View, Button, Image, TouchableOpacity, Animated} from 'react-native';
+import {StyleSheet, TextInput, View, Button, Image, TouchableOpacity, Animated} from 'react-native';
 import {ImageButton} from 'react-native-image-button-text';
 import Header from '../Components/header';
 
@@ -15,50 +15,26 @@ export default function Menu({navigation}){
         
 
  
-        <View style = {{flexWrap: 'wrap', flexDirection: 'row', alignItems: 'center', marginLeft: 20 ,justifyContent: 'space-evenly',}}>
-        <ImageButton style={{marginTop: 20}} 
-        width={120} 
-        height={120} 
+        <View style = {{flexWrap: 'wrap', flexDirection: 'row', alignItems: 'center' ,justifyContent: 'space-evenly',}}>
+        <Image style={{marginTop: 20}} 
+        width={400} 
+        height={300} 
         onPress={() => navigation.navigate('Burgers')}
         text="Burgers"
         fontSize = {20}
         fontWeight = "Bold"
-        source={require('../assets/burger.png')}/>
-
-            
-        <ImageButton style={{marginTop: 20}} 
-        width={120} 
-        height={120} 
-        onPress={() => navigation.navigate('CardPayment')}
-        text="Pizzas"
-        fontSize = {20}
-        fontWeight = "Bold"
-        source={require('../assets/pizza.jpg')}/>
-
-        <ImageButton style={{marginTop: 20}} 
-        width={120} 
-        height={120} 
-        onPress={() => navigation.navigate('CardPayment')}
-        text="Drinks"
-        fontSize = {20}
-        fontWeight = "Bold"
-        source={require('../assets/drinks.png')}/>
-
-        <ImageButton style={{marginTop: 20}} 
-        width={120} 
-        height={120} 
-        onPress={() => navigation.navigate('CardPayment')}
-        text="Icecreams"
-        fontSize = {20}
-        fontWeight = "Bold"
-        source={require('../assets/icecream.jpg')}/>
+        source={require('../assets/tablemap.png')}/>
 
         </View>
-
+        
+        <TextInput
+            style={styles.input}
+            placeholder='Reservation Time HH/MM'
+        />
         
         <View style={{marginLeft:80, position: 'absolute', marginTop: 635, width: 250}}>
                 <Button
-                    onPress={() => navigation.navigate('ordersummary')}
+                    onPress={() => navigation.navigate('FinalResPage')}
                     title='Reserve Table'
                     color='#f04b48' 
                 />
@@ -79,5 +55,12 @@ const styles = StyleSheet.create({
         paddingTop: 30,
         flexDirection: 'row'
     },
-  
+    input: {
+        marginTop: 50,
+        paddingHorizontal: 5,
+        borderWidth: 1,
+        borderColor: 'gray',
+        width: 250,
+        alignSelf: 'center'
+    },
 });
