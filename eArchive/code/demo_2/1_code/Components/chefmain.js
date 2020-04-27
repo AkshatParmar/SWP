@@ -19,7 +19,7 @@ export default function main({navigation}){
                 source={require('../assets/Logo.png')}
               />
             </Text>
-            <TouchableOpacity onPress={() => navigation.navigate('detail')}>
+            <TouchableOpacity onPress={() => navigation.navigate('chefdetail')}>
             <Text style={styles.text}>
               burger combo
               <Image

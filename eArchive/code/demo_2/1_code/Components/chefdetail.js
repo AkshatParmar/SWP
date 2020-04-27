@@ -35,9 +35,12 @@ export default function main({navigation}){
             <TouchableOpacity onPress={() => navigation.navigate('chefdone')}>
             <Text style={{color: '#f04b48', fontSize: 20, fontWeight: 'bold', textAlign: 'center', marginBottom: 20}}>Done</Text>
             </TouchableOpacity>  
-            <TouchableOpacity onPress={() => navigation.navigate('chefdone')}>
+            <TouchableOpacity onPress={() => navigation.navigate('chefcallserver')}>
             <Text style={{color: '#f04b48', fontSize: 20, fontWeight: 'bold', textAlign: 'center', marginBottom: 20}}>Call Server</Text>
             </TouchableOpacity>  
+            <TouchableOpacity onPress={() => navigation.navigate('chefestimate')}>
+            <Text style={{color: '#f04b48', fontSize: 20, fontWeight: 'bold', textAlign: 'center', marginBottom: 20}}>Eistmate Time</Text>
+            </TouchableOpacity>
           </View>
       );
   

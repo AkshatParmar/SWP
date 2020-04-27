@@ -25,14 +25,14 @@ export default function Login({navigation}){
             
             <View style={{marginTop: 40,  width: 160}}>
                 <Button
-                    onPress={() => navigation.navigate('customermenu')}
+                    onPress={() => navigation.navigate('customermain')}
                     title='Login'
                     color='#f04b48' 
                 />
             </View>
             <View style={{marginVertical: 30,  width: 160}}>
                 <Button
-                    onPress={() => navigation.navigate('customermenu')}
+                    onPress={() => navigation.navigate('customermain')}
                     title='Continue as Guest'
                     color='#f04b48' 
                 />

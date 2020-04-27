@@ -12,7 +12,7 @@ Installing and Initializing Expo
 
 Running the software
 1.) Clone the repo " git clone <url> " ( The url is https://github.com/AkshatParmar/SWP)
-2.) Open terminal in the 1_code directory. 
+2.) Open terminal in the 1_code directory of demo_2 if you want to use the final version. 
     - Right click "1_code" folder and click "Open in terminal"
 2.) Run " npm install " (Note how node_modules folder is added)
 3.) Type " expo start " to begin testing
@@ -31,3 +31,4 @@ npm install @react-navigation/stack
 npm install react-navigation --save
 npm install react-navigation-stack --save
 npm install rn-swipe-button --save
+npm install react-native-image-button

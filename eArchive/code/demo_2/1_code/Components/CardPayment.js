@@ -28,7 +28,7 @@ export default function CardPayment({navigation}) {
         />
         <SwipeButton height={25} title='Swipe Your Card' onSwipeSuccess={() => console.log('Swiped Successfully')} />
         <View>
-                <TouchableOpacity onPress={() => navigation.navigate('customermenu')}>
+                <TouchableOpacity onPress={() => navigation.navigate('customermain')}>
                 <Text style={{color: '#f04b48', fontSize: 20, fontWeight: 'bold', textAlign: 'center', marginBottom: 20}}>Cancel </Text>
                 </TouchableOpacity> 
             </View>
